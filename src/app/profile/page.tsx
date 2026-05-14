@@ -6,7 +6,7 @@ import ProfileHeader from "@/components/profile/profileHeader";
 
 export default function Profile() {
   return (
-    <div>
+    <div className="-mt-10">
       <div className="relative min-h-[calc(100dvh-10dvh)] md:min-h-[calc(100dvh-7dvh)] bg-list-background">
         <div className="absolute left-0 top-0 h-[330px] w-full rounded-b-[25px] bg-blue sm:rounded-b-[60px] lg:rounded-b-[80px] xl:rounded-b-[100px]" />
         <ProfileHeader />
