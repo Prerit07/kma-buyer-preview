@@ -599,7 +599,7 @@ export default function Filter() {
             </button>
           </div>
         </div>
-        <div className="flex justify-center gap-3 pt-2 2md:pt-3">
+        <div className="flex justify-center flex-wrap gap-2 md:gap-3 pt-2 2md:pt-3">
           {['commercial'].includes(filterType) && <div
             onClick={(event) => handlePopperOpen(event, 'transactiontype')}
             className="text-xs md:text-sm rounded-full cursor-pointer px-3 md:px-4 bg-[#E4E4E4] text-text-black h-[33px] flex justify-center items-center gap-1 md:gap-2 leading-[110%] whitespace-nowrap"

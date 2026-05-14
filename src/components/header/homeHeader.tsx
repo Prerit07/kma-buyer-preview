@@ -85,6 +85,9 @@ export default function HomeHeader({ showColor = false, show2color = false }: Ho
   const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isBlueTheme = showColor || show2color || isScrolled;
 
+  const isHomePage = pathname === "/";
+  const isAboutPage = pathname === "/about-us"
+  const isJoinUs = pathname === "/join-us"
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
     setActiveSubMenu(null);
@@ -245,7 +248,7 @@ const handleHeaderSubMenuClick = (label: string) => {
 
   return (
     <>
-    <div className="sticky top-0 mt-5 md:mt-10 z-50 w-full flex justify-center">
+    <div className={`sticky top-0 ${isHomePage || isAboutPage || isJoinUs ? "mt-5" : "mt-10"} md:mt-10 z-50 w-full flex justify-center`}>
     <div className="w-[90%] mx-auto max-w-[1440px]">
       <div
         ref={headerBarRef}

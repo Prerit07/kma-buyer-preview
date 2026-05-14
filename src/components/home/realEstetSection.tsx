@@ -83,7 +83,7 @@ function ExploreCard({
       }
       whileHover={{ y: -4 }}
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
-      className="relative isolate overflow-hidden rounded-2xl bg-slate-200 shadow-[0_10px_30px_rgba(0,0,0,0.10)] ring-1 ring-black/5 group"
+      className="relative isolate overflow-hidden rounded-2xl bg-slate-200 shadow-[0_10px_30px_rgba(0,0,0,0.10)] ring-1 ring-black/5 group cursor-pointer"
     >
       <div className="relative h-[170px] sm:h-[220px] w-full">
         {resolvedSrc ? (
@@ -119,11 +119,11 @@ function ExploreCard({
         <button
           type="button"
           aria-label={`Explore ${name}`}
-          className="absolute bottom-4 right-4 grid place-items-center h-11 w-11 rounded-full bg-white shadow-md ring-1 ring-black/5 transition-transform duration-300 group-hover:scale-105 active:scale-95"
+          className="absolute bottom-4 right-4 grid place-items-center h-11 w-11 rounded-full bg-white shadow-md ring-1 ring-black/5 transition-transform duration-300 group-hover:scale-105 active:scale-95 cursor-pointer"
         >
           <Image
             src={"/assets/navigate-arrow-blue.svg"}
-            width={18}
+          width={18}
             height={18}
             alt=""
             className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
