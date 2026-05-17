@@ -282,7 +282,7 @@ const handleHeaderSubMenuClick = (label: string) => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-start items-center gap-5 w-full px-4 text-center">
+        <div className="flex flex-row justify-between items-center gap-5 w-full px-4 text-center">
           <div
             onMouseEnter={(event) => {
               cancelCloseTimer();
@@ -317,7 +317,7 @@ const handleHeaderSubMenuClick = (label: string) => {
               style={{ width: "12px", height: "10px", marginLeft: "15px" }}
             />
           </div>
-          <div className="hidden 2md:block border border-[0.2px] border-[#FFFFFF] h-[30px] ml-2" />
+          <div className="hidden 2md:block border border-[0.2px] border-[#FFFFFF] h-[30px]" />
 
           {headerMenuList.map((item) => {
             const hasDropdown = item.value !== "refer_and_earn";
@@ -362,8 +362,8 @@ const handleHeaderSubMenuClick = (label: string) => {
           >
             <Image
               src="/assets/more-white.svg"
-              height={20}
-              width={20}
+              height={14}
+              width={14}
               alt="more"
               className="hidden 2md:block cursor-pointer"
             />

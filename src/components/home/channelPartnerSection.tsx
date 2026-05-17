@@ -98,8 +98,9 @@ export default function ChannelPartnerSection({
       <div className="mt-6">
         <div className="xl:hidden w-full partner-swiper">
           <Swiper
+          modules={[Pagination]}
             spaceBetween={12}
-            slidesPerView={1.15}
+            slidesPerView={1}
             pagination={{ clickable: true }}
             className="pb-12"
           >

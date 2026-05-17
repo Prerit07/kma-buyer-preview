@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -180,11 +180,16 @@ Hear directly from our clients how KMA helped them buy, sell, or rent properties
           <div className="col-span-2">
             <div className="lg:hidden w-full property-swiper mb-5">
               <Swiper
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 spaceBetween={16}
-                slidesPerView={1.4}
+                slidesPerView={1}
                 centeredSlides={true}
                 pagination={{ clickable: true }}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: true,
+                }}
+                loop={true}
                 className="pb-12"
               >
                 {reviewData?.reviews?.slice(0, 4).map((item) => (

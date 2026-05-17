@@ -180,7 +180,7 @@ export default function ExploreSection({ explorePropertyList = [] }: ExploreSect
           <div className="w-1/2 h-[2px] bg-gray-900" />
         </div>
 
-        <p className="text-text-gray text-xs leading-relaxed text-center">
+        <p className="text-text-gray text-xs leading-relaxed text-center lg:text-left">
         Looking for a cozy apartment, a luxurious villa, a smart investment, or a premium office space? We’ve got you covered.
 
         </p>

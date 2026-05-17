@@ -11,7 +11,7 @@ import {
   upgradeToOwnerApiHandler,
 } from "@/services/userService";
 
-const SELLER_URL = process.env.NEXT_PUBLIC_SELLER_URL ?? "https://seller.kmaglobalproperty.com";
+const SELLER_URL = process.env.  ?? "https://seller.kmaglobalproperty.com";
 const SELLER_BASE = SELLER_URL.replace(/\/$/, "");
 const SELLER_TARGET = `${SELLER_BASE}/post-property`;
 // Seller's own signup/login entry point. Not-logged-in users who clicked
